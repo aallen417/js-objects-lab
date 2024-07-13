@@ -51,4 +51,19 @@ const starterPokemon = pokemon[3]
 game.party.unshift(starterPokemon)
 
 
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+const firstCaughtPkmn = pokemon[57]
+const secondCaughtPkmn = pokemon[9]
+const thirdCaughtPkmn = pokemon[15]
+
+game.party.push(firstCaughtPkmn, secondCaughtPkmn, thirdCaughtPkmn)
+
 
