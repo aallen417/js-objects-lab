@@ -56,6 +56,7 @@ pokemon.forEach((pokemon) => {
 
 game.party.push(starterPokemon[1])
 
+
 /*
 Exercise 5
 1. Choose three more Pokémon from the `pokemon` array and add them to your party.
@@ -105,4 +106,5 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 7 here:
 */
 
+game.party.splice(0, 1, pokemon[4])
 
