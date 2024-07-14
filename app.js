@@ -173,9 +173,7 @@ Solve Exercise 11 here:
 
 game.catchPokemon = function (pokemonObj) {
     game.party.push(pokemonObj)
-    game.items.forEach((pokemonObj) => {
         game.items[1].quantity--
-    })
 }
 
 game.catchPokemon(pokemon[122])
@@ -250,8 +248,33 @@ Solve Exercise 14 here:
 game.partyCount = function () {
     let partyCount = 0
     game.party.forEach(() => {
-        partyCount++
-        console.log(partyCount)
-    })
+        partyCount+=1
+     })
+     return partyCount
     }
     
+
+/*
+Exercise 15
+1. Now, complete gyms with a difficulty below 8. Reflect on how this is similar to or different from the previous gym exercises.
+(change the value of `complete` in the qualifying objects from false to true).
+
+Solve Exercise 15 here:
+*/
+
+game.gyms.forEach((gym) => {
+    if (gym.difficulty >= 6 && gym.difficulty < 8) { 
+        gym.completed = true
+    }    
+})
+
+
+/*
+Exercise 16
+1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
+
+
+Solve Exercise 16 here:
+*/
+
+console.log(game)
